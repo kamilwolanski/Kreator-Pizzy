@@ -5,9 +5,10 @@ export const H2 = styled.h2`
   font-size: ${({ theme: { fontSize } }) => {
     return fontSize.l;
   }};
-  color: ${({ theme: { colors } }) => {
+  /* color: ${({ theme: { colors } }) => {
     return colors.white;
-  }};
+  }}; */
+  color: #313942;
   text-align: center;
   text-transform: uppercase;
   @media (min-width: 1600px) {

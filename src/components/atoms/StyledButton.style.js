@@ -4,7 +4,7 @@ const StyledButton = styled.button`
   min-width: ${({ isWidth }) => (isWidth ? '300px' : '0px')};
   margin: ${({ margin }) => (margin ? '20px' : '10px')};
   padding: ${({ extraPadding }) => (extraPadding ? '15px 30px' : '10px')};
-  background-color: transparent;
+  background-color: #313942;
   border: ${({ borderBlack }) =>
     borderBlack ? '2px solid black' : '2px solid white'};
   color: ${({ colorBlack, theme: { colors } }) => {

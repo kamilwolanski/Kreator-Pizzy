@@ -6,8 +6,9 @@ export const StyledNav = styled.nav`
   top: 0;
   width: 100%;
   padding: 1.25rem 2rem;
-  background-color: ${({ isBlackNav }) =>
-    isBlackNav ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.4)'};
+  background-color: #313942;
+  /* background-color: ${({ isBlackNav }) =>
+    isBlackNav ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.4)'}; */
   color: ${({ theme: { colors } }) => {
     return colors.white;
   }};

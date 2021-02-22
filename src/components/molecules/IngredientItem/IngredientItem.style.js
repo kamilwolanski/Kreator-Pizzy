@@ -5,6 +5,7 @@ export const StyledIngredientItem = styled.li`
   margin: 10px;
   width: 800px;
   background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border: 2px solid white;
   border-radius: 10px;
 `;

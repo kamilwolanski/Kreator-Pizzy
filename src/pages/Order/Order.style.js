@@ -8,13 +8,16 @@ export const OrderSection = styled.section`
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-      180deg,
-      rgba(3, 3, 2, 0.4209033955379027) 0%,
-      rgba(0, 0, 0, 0.4749650201877626) 100%,
-      rgba(60, 60, 29, 0.4105392498796393) 100%
-    ),
-    url(${(props) => props.img});
+  /* background-color: #edece9;
+   */
+  background-image: linear-gradient(
+    to left top,
+    #edece9,
+    #f3f0ef,
+    #f7f5f5,
+    #fbfafb,
+    #ffffff
+  );
   background-position: center;
   background-size: cover;
 `;

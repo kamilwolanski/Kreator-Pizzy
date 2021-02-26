@@ -1,4 +1,4 @@
-import { Header, Welcome, H1, P } from './HomePage.style';
+import { Header, Welcome, H1, P, Github } from './HomePage.style';
 import { useHistory } from 'react-router-dom';
 import StyledButton from '../../components/atoms/StyledButton.style';
 import Pizza from '../../components/atoms/Pizza/Pizza';
@@ -31,6 +31,9 @@ const HomePage = () => {
       <Grater visibleX="55vw" hiddenX="55vw" visibleY="30vh" hiddenY="-30vh" />
       <RollingPin visibleY="-70" hiddenY="-140" exitY="-200" exitX="-160" />
       <Dough />
+      <a target="_blank" href="https://github.com/kamilwolanski/Kreator-Pizzy">
+        <Github />
+      </a>
     </Header>
   );
 };

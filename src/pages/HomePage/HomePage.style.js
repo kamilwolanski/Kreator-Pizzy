@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
+import { AiFillGithub } from 'react-icons/ai';
 
 export const Header = styled.header`
   height: 100vh;
@@ -86,4 +87,21 @@ export const P = styled(H1)`
 export const StyledButton = styled(Button)`
   padding: 16px 45px !important;
   margin-top: 20px !important;
+`;
+
+export const Github = styled(AiFillGithub)`
+  position: absolute;
+  left: 10px;
+  bottom: 20%;
+  font-size: 50px;
+  color: black;
+
+  @media (max-width: 700px) {
+    bottom: 30%;
+    font-size: 40px;
+  }
+  @media (max-width: 400px) {
+    top: 10px;
+    font-size: 40px;
+  }
 `;

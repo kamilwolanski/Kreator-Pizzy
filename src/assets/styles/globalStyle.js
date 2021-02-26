@@ -23,6 +23,7 @@ body {
 }
 a, button {
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 h1,h2 {
     font-family: 'Montserrat', sans-serif;

@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -31,7 +31,7 @@ a, button {
 h1,h2 {
     /* font-family: 'Akaya Telivigala', cursive; */
     /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Lilita One', cursive;
+    font-family: 'Neucha', cursive;
 }
 `;
 

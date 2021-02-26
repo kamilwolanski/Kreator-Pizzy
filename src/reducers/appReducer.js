@@ -24,12 +24,8 @@ const initialStore = {
 };
 
 export const appReducer = (state = initialStore, action) => {
-  // console.log('Bedziemy tworzyć nowy stan aplikacji');
-  // console.log(action);
-  // console.log(state);
   switch (action.type) {
     case ADD_PIZZA:
-      // const itemActive = state.pizzaItems.find((item) => item.isActive);
       return {
         ...state,
         shoppingBasket: state.pizzaItems.filter(
@@ -48,7 +44,6 @@ export const appReducer = (state = initialStore, action) => {
         }),
       };
     case TOTAL_AMOUNT:
-      console.log('TOTAL AMOUNT');
       let totalPrice = 0;
       if (state.shoppingBasket.length === 0) {
         totalPrice = 0;
@@ -97,7 +92,6 @@ export const appReducer = (state = initialStore, action) => {
         }),
       };
     case ADD_INGREDIENTS_TO_BASKET:
-      // console.log('ADD_INGREDIENTS_TO_BASKET');
       let ingredientsAboveZero = state.pizzaIngredients.filter(
         (item) => item.amount > 0
       );
@@ -112,7 +106,6 @@ export const appReducer = (state = initialStore, action) => {
         }
       };
       const sumOfWeights = getSumOfWeight();
-      // console.log(sumOfWeights);
 
       return {
         ...state,
@@ -193,7 +186,6 @@ export const appReducer = (state = initialStore, action) => {
         ],
       };
     case ADD_PIZZA_TO_MAIN:
-      console.log('DODANO PIZZE DO NAME');
       return {
         ...state,
         mainBasket: [
@@ -202,7 +194,6 @@ export const appReducer = (state = initialStore, action) => {
         ],
       };
     case TOTAL_PRICE:
-      console.log('total price');
       return {
         ...state,
         shoppingBasket: state.shoppingBasket.map((item, index) => {

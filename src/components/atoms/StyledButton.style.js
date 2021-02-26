@@ -22,7 +22,6 @@ const handleWhileHover = (props) => {
   }
 };
 const StyledButton = styled(motion.button).attrs((props) => ({
-  x: console.log(props),
   whileHover: handleWhileHover(props),
   variants: buttonVariants,
 }))`

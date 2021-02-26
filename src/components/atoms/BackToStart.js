@@ -6,7 +6,6 @@ import { resetAll, resetMainBasket } from '../../actions/appActions';
 const BackToStart = ({ resetAll, resetMainBasket, border, color }) => {
   let history = useHistory();
 
-  console.log(border, color);
   const handleReset = () => {
     resetAll();
     resetMainBasket();

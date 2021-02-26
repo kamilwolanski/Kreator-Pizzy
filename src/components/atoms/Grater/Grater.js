@@ -7,9 +7,8 @@ const Grater = ({ visibleX, hiddenX, visibleY, hiddenY }) => {
       transition: { duration: 1.8 },
       x: visibleX,
       y: visibleY,
-      type: 'spring',
     },
-    hidden: { opacity: 1, x: hiddenX, y: hiddenY },
+    hidden: { opacity: 0, x: hiddenX, y: hiddenY },
     exit: { y: hiddenY, x: hiddenX, transition: { duration: 0.7 } },
   };
   return (

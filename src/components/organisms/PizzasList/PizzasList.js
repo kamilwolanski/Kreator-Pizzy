@@ -14,7 +14,6 @@ const PizzasList = ({
     resetAll();
   }, [resetAll]);
   useEffect(() => {
-    console.log('to sie dzieje');
     getTotalAmount();
   }, [shoppingBasket, getTotalAmount]);
   const pizzaItemsComponent = pizzaItems.map((pizzaItem) => (

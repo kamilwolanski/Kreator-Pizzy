@@ -43,8 +43,6 @@ const PizzaItem = ({
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  console.log(windowWidth);
-
   const handleOnClick = (id, isActive) => {
     setActive(id);
     addPizza(id);

@@ -19,12 +19,7 @@ import BasketItem from '../../components/organisms/BasketItem/BasketItem';
 import BackToStart from '../../components/atoms/BackToStart';
 import Girl from '../../components/atoms/Girl/Girl';
 
-const Summary = ({
-  shoppingBasket,
-  totalAmount,
-  resetIngredients,
-  mainBasket,
-}) => {
+const Summary = ({ totalAmount, resetIngredients, mainBasket }) => {
   const [minutes, setMinutes] = useState(30);
   const [seconds, setSeconds] = useState(0);
 
@@ -123,7 +118,6 @@ const mapDispatchToProps = {
 };
 
 const mapStateToProps = ({ orders }) => ({
-  shoppingBasket: orders.shoppingBasket,
   mainBasket: orders.mainBasket,
   totalAmount: orders.totalAmount,
 });

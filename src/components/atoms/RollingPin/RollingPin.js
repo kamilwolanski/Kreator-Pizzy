@@ -7,10 +7,8 @@ const RollingPin = ({ visibleY, hiddenY, exitY, exitX }) => {
       transition: { duration: 0.5, delay: 0.4 },
       x: 0,
       y: parseInt(visibleY),
-      type: 'spring',
-      stiffness: 500,
     },
-    hidden: { opacity: 1, x: '-100%', y: parseInt(hiddenY) },
+    hidden: { opacity: 0, x: '-100%', y: parseInt(hiddenY) },
     exit: {
       y: parseInt(exitY),
       x: parseInt(exitX),

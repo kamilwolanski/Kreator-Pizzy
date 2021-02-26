@@ -6,7 +6,6 @@ const variantsNav = {
     opacity: 1,
     transition: { duration: 1.4 },
     y: 0,
-    type: 'spring',
   },
   hidden: { opacity: 0, y: -200 },
   exit: { top: -400, transition: { duration: 0.6 } },
@@ -23,7 +22,6 @@ export const StyledNav = styled(motion.nav).attrs(() => ({
   top: 0;
   width: 100%;
   padding: 1.25rem 2rem;
-  /* background-color: #313942; */
   background-color: ${({ isBlackNav }) =>
     isBlackNav ? 'rgba(255, 253, 227, 1)' : 'transparent'};
   color: ${({ theme: { colors } }) => {

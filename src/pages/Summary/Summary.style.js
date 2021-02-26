@@ -10,7 +10,6 @@ export const StyledSummary = styled(motion.div)`
   width: 100%;
   margin: 0 auto;
   padding: 40px 0;
-  /* filter: ${({ blured }) => blured && 'blur(4px)'}; */
 
   ::before {
     content: '';
@@ -20,9 +19,8 @@ export const StyledSummary = styled(motion.div)`
     z-index: 1;
     width: 100%;
     height: 100%;
-    backdrop-filter: ${({ blured }) =>
-      blured && 'blur(4px)'}; /* apply the blur */
-    pointer-events: none; /* make the pseudo class click-through */
+    backdrop-filter: ${({ blured }) => blured && 'blur(4px)'};
+    pointer-events: none;
   }
 `;
 

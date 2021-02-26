@@ -1,13 +1,11 @@
 import salamiImg from '../assets/pizza_ingredients/salami1.svg';
 import cheeseImg from '../assets/pizza_ingredients/cheese1.svg';
-import mozzarellaImg from '../assets/pizza_ingredients/mozzarella.svg';
 import mushroomsImg from '../assets/pizza_ingredients/champignon1.svg';
 import pepperImg from '../assets/pizza_ingredients/peppers1.svg';
 import tomatoesImg from '../assets/pizza_ingredients/tomatoes1.svg';
 import olivesImg from '../assets/pizza_ingredients/olives1.svg';
 import basilImg from '../assets/pizza_ingredients/basil1.svg';
 import shrimpImg from '../assets/pizza_ingredients/shrimp.svg';
-import garlicImg from '../assets/pizza_ingredients/garlic.svg';
 
 const pizzaIngredients = [
   {

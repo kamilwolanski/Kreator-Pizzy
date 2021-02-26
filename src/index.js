@@ -4,7 +4,7 @@ import App from './views/App';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import { BrowserRouter as Router } from 'react-router-dom';
-import ScrollToTop from './helpers/ScrollToTop';
+import ScrollToTop from './views/ScrollToTop';
 
 ReactDOM.render(
   <Provider store={store}>

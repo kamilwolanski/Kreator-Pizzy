@@ -48,15 +48,15 @@ const IngredientItem = ({
     totalPrice();
   };
 
-  const checkAmount = (dodawanyElement, value) => {
+  const checkAmount = (addingElement, value) => {
     if (
-      dodawanyElement.weight * value >
+      addingElement.weight * value >
         shoppingBasket.maxWeight - shoppingBasket.weight ||
-      dodawanyElement.weight * value > shoppingBasket.maxWeight
+      addingElement.weight * value > shoppingBasket.maxWeight
     ) {
       return (
         (shoppingBasket.maxWeight - shoppingBasket.weight) /
-          dodawanyElement.weight +
+          addingElement.weight +
         amount
       ).toFixed();
     }
@@ -67,12 +67,11 @@ const IngredientItem = ({
     if (value < 0) {
       return;
     }
-    const dodawanyElement = pizzaIngredients.find(
+    const addingElement = pizzaIngredients.find(
       (ingredient) => ingredient.id === id
     );
-    console.log(dodawanyElement);
-    console.log(value);
-    value = checkAmount(dodawanyElement, value);
+
+    value = checkAmount(addingElement, value);
     handleAmount(id, Number(value));
     addIngredientsToBasket();
     totalPrice();

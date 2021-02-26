@@ -20,7 +20,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     background-color: #f7ec66;
-    overflow-y: scroll;
 }
 a, button {
     font-family: 'Montserrat', sans-serif;

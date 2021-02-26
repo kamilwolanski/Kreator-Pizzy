@@ -48,7 +48,6 @@ export const NavData = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 27px;
-  font-family: 'Akaya Telivigala', cursive;
 
   @media (min-width: 1600px) {
     font-size: 36px;

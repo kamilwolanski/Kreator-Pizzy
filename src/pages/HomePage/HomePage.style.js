@@ -18,7 +18,6 @@ export const Welcome = styled.div`
   align-items: center;
   padding: 20px;
   z-index: 3;
-  font-family: 'Akaya Telivigala', cursive;
   @media (max-width: 1000px) {
     left: 50%;
     top: 10%;

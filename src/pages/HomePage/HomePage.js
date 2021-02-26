@@ -1,5 +1,4 @@
 import { Header, Welcome, H1, P } from './HomePage.style';
-import tlo1 from '../../assets/backgrounds/tlo1.jpg';
 import { useHistory } from 'react-router-dom';
 import StyledButton from '../../components/atoms/StyledButton.style';
 import Pizza from '../../components/atoms/Pizza/Pizza';
@@ -20,7 +19,7 @@ const HomePage = () => {
   };
 
   return (
-    <Header img={tlo1}>
+    <Header>
       <Welcome>
         <H1>witaj w kreatorze pizzy!</H1>
         <P>Kliknij START aby rozpocząć</P>

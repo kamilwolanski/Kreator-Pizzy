@@ -1,4 +1,3 @@
-import pizzaItem from '../assets/pizza_imgs/pizzaItem.svg';
 import pizza1 from '../assets/pizza_imgs/pizza1.svg';
 import pizza2 from '../assets/pizza_imgs/pizza2.svg';
 import pizza3 from '../assets/pizza_imgs/pizza3.svg';

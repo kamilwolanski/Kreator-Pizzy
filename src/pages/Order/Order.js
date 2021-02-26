@@ -1,8 +1,6 @@
 import { OrderSection } from './Order.style';
 import Nav from '../../components/organisms/Nav/Nav';
 import Content from '../../components/templates/Content/Content';
-import compose_pizza from '../../assets/backgrounds/compose_pizza.jpg';
-import stol3 from '../../assets/backgrounds/stol3.jpg';
 import StyledButton from '../../components/atoms/StyledButton.style';
 import { ButtonsContainer, StyledCenter } from './Order.style';
 import BackButton from '../../components/atoms/BackButton';
@@ -38,17 +36,10 @@ const Order = ({
     history.push(location);
   };
 
-  const handleImg = () => {
-    if (currentLocation.pathname === '/order/ingredients') {
-      return stol3;
-    } else {
-      return compose_pizza;
-    }
-  };
   return (
     <>
       <Nav />
-      <OrderSection img={handleImg}>
+      <OrderSection>
         <StyledCenter>
           <Content />
           <ButtonsContainer>

@@ -1,5 +1,5 @@
 import StyledButton from './StyledButton.style';
-import { NavLink, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { resetAll, resetMainBasket } from '../../actions/appActions';
 

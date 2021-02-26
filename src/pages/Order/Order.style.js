@@ -11,7 +11,7 @@ export const OrderSection = styled.section`
   min-height: 100vh;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 const buttonsContainerVariants = {

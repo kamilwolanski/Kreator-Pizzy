@@ -83,7 +83,6 @@ export const PopUpTitle = styled.p`
   }};
   text-transform: uppercase;
   font-weight: bold;
-  font-family: 'Akaya Telivigala', cursive;
 
   @media (min-width: 1600px) {
     font-size: ${({ theme: { fontSize } }) => {

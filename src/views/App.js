@@ -4,20 +4,21 @@ import Summary from '../pages/Summary/Summary';
 import GlobalStyle from '../assets/styles/globalStyle';
 import { theme } from '../assets/styles/theme';
 import { ThemeProvider } from 'styled-components';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
+import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 const App = () => {
+  const location = useLocation();
   return (
-    <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Switch>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.key}>
           <Route path="/" exact component={HomePage} />
           <Route path="/order" component={Order} />
           <Route path="/summary" component={Summary} />
         </Switch>
-      </ThemeProvider>
-    </BrowserRouter>
+      </AnimatePresence>
+    </ThemeProvider>
   );
 };
 

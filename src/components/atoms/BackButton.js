@@ -6,13 +6,12 @@ import { resetIngredients, getTotalAmount } from '../../actions/appActions';
 const BackButton = ({ resetIngredients }) => {
   const history = useHistory();
   const handleOnClick = () => {
-    // getTotalAmount();
     resetIngredients();
     history.goBack();
   };
 
   return (
-    <StyledButton margin extraPadding onClick={handleOnClick}>
+    <StyledButton margin extraPadding fontM onClick={handleOnClick}>
       Wróć
     </StyledButton>
   );

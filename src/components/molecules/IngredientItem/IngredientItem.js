@@ -15,6 +15,7 @@ import {
   StyledToggleBtn,
   IngredientWeight,
   IngredientPriceAndWeight,
+  Slash,
 } from './IngredientItem.style';
 import {
   toggleAmount,
@@ -93,7 +94,7 @@ const IngredientItem = ({
             <StyledToggleBtn onClick={() => handleOnClick(id, 'dec')}>
               <Minus />
             </StyledToggleBtn>
-            <span style={{ fontSize: '30px', fontWeight: 'bold' }}>/</span>
+            <Slash>/</Slash>
             <StyledToggleBtn
               disabled={isToMuch}
               onClick={() => handleOnClick(id, 'inc')}

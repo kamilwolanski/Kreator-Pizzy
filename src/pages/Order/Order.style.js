@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const OrderSection = styled.section`
   position: absolute;
@@ -8,23 +9,32 @@ export const OrderSection = styled.section`
   left: 0;
   width: 100%;
   min-height: 100vh;
-  /* background-color: #edece9;
-   */
-  background-image: linear-gradient(
-    to left top,
-    #edece9,
-    #f3f0ef,
-    #f7f5f5,
-    #fbfafb,
-    #ffffff
-  );
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 `;
 
-export const ButtonsContainer = styled.div`
+const buttonsContainerVariants = {
+  hidden: {
+    opacity: 0,
+    y: 200,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1 },
+  },
+};
+export const ButtonsContainer = styled(motion.div).attrs((props) => ({
+  initial: 'hidden',
+  animate: 'visible',
+  variants: buttonsContainerVariants,
+}))`
   display: flex;
   justify-content: center;
+  @media (min-width: 1600px) {
+    margin-top: 40px;
+  }
 `;
 
 export const StyledCenter = styled.div`

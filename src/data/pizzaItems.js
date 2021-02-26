@@ -1,6 +1,7 @@
-import smallPizza from '../assets/pizza_imgs/pizza_small.svg';
-import mediumPizza from '../assets/pizza_imgs/pizza_medium.svg';
-import bigPizza from '../assets/pizza_imgs/pizza_big.svg';
+import pizzaItem from '../assets/pizza_imgs/pizzaItem.svg';
+import pizza1 from '../assets/pizza_imgs/pizza1.svg';
+import pizza2 from '../assets/pizza_imgs/pizza2.svg';
+import pizza3 from '../assets/pizza_imgs/pizza3.svg';
 
 const pizzaItems = [
   {
@@ -9,11 +10,12 @@ const pizzaItems = [
     size: 25,
     price: 10,
     isActive: false,
-    img: smallPizza,
+    img: pizza1,
     ingredients: [],
     maxWeight: 30,
     weight: 0,
     totalPrice: 0,
+    width: 160,
   },
   {
     id: 2,
@@ -21,11 +23,12 @@ const pizzaItems = [
     size: 35,
     price: 18,
     isActive: false,
-    img: mediumPizza,
+    img: pizza2,
     ingredients: [],
     maxWeight: 40,
     weight: 0,
     totalPrice: 0,
+    width: 175,
   },
   {
     id: 3,
@@ -33,11 +36,12 @@ const pizzaItems = [
     size: 50,
     price: 24,
     isActive: false,
-    img: bigPizza,
+    img: pizza3,
     ingredients: [],
     maxWeight: 50,
     weight: 0,
     totalPrice: 0,
+    width: 190,
   },
 ];
 

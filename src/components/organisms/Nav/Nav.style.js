@@ -1,19 +1,36 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const StyledNav = styled.nav`
+const variantsNav = {
+  visible: {
+    opacity: 1,
+    transition: { duration: 1.4 },
+    y: 0,
+    type: 'spring',
+  },
+  hidden: { opacity: 0, y: -200 },
+  exit: { top: -400, transition: { duration: 0.6 } },
+};
+export const StyledNav = styled(motion.nav).attrs(() => ({
+  key: 'modal',
+  initial: 'hidden',
+  animate: 'visible',
+  exit: 'exit',
+  variants: variantsNav,
+}))`
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   padding: 1.25rem 2rem;
-  background-color: #313942;
-  /* background-color: ${({ isBlackNav }) =>
-    isBlackNav ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.4)'}; */
+  /* background-color: #313942; */
+  background-color: ${({ isBlackNav }) =>
+    isBlackNav ? 'rgba(255, 253, 227, 1)' : 'transparent'};
   color: ${({ theme: { colors } }) => {
-    return colors.white;
+    return colors.black;
   }};
   transition: background-color 0.3s;
-  z-index: 1;
+  z-index: 6;
 `;
 
 export const NavCenter = styled.div`
@@ -25,18 +42,17 @@ export const NavCenter = styled.div`
   align-items: center;
 `;
 
-export const TotalPrice = styled.span`
-  font-size: ${({ theme: { fontSize } }) => {
-    return fontSize.m;
-  }};
-`;
+export const TotalPrice = styled.span``;
 
 export const NavData = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: ${({ theme: { fontSize } }) => {
-    return fontSize.m;
-  }};
+  font-size: 27px;
+  font-family: 'Akaya Telivigala', cursive;
+
+  @media (min-width: 1600px) {
+    font-size: 36px;
+  }
 `;
 
 export const Capacity = styled.span`

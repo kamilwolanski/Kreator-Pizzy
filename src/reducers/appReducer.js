@@ -175,16 +175,20 @@ export const appReducer = (state = initialStore, action) => {
         ...state,
         pizzaIngredients: [
           ...state.pizzaIngredients.map((ingredient) => {
-            return {
-              ...ingredient,
-              isToMuch:
-                state.shoppingBasket[state.shoppingBasket.length - 1]
-                  .maxWeight <
-                state.shoppingBasket[state.shoppingBasket.length - 1].weight +
-                  ingredient.weight
-                  ? true
-                  : false,
-            };
+            if (state.shoppingBasket.length > 0) {
+              return {
+                ...ingredient,
+                isToMuch:
+                  state.shoppingBasket[state.shoppingBasket.length - 1]
+                    .maxWeight <
+                  state.shoppingBasket[state.shoppingBasket.length - 1].weight +
+                    ingredient.weight
+                    ? true
+                    : false,
+              };
+            } else {
+              return ingredient;
+            }
           }),
         ],
       };

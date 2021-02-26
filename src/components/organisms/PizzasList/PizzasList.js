@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PizzaItem from '../../molecules/PizzaItem/PizzaItem';
-import { H2, Ul } from './PizzasList.style';
+import { H2, UlPizzaList } from './PizzasList.style';
 import { resetAll, getTotalAmount } from '../../../actions/appActions';
 
 const PizzasList = ({
@@ -23,7 +23,7 @@ const PizzasList = ({
   return (
     <>
       <H2>wybierz rozmiar pizzy</H2>
-      <Ul flex>{pizzaItemsComponent}</Ul>
+      <UlPizzaList flex>{pizzaItemsComponent}</UlPizzaList>
     </>
   );
 };

@@ -15,6 +15,17 @@ export const PizzaSizeContainer = styled.div`
     return colors.black;
   }};
   font-weight: 700;
+
+  @media (min-width: 1600px) {
+    font-size: ${({ theme: { fontSize } }) => {
+      return fontSize.xm;
+    }};
+  }
+  @media (max-width: 520px) {
+    font-size: ${({ theme: { fontSize } }) => {
+      return fontSize.sm;
+    }};
+  }
 `;
 
 export const StyledBasketItemWrapper = styled.div`
@@ -41,6 +52,15 @@ export const TotalPrice = styled.span`
   }};
   font-weight: 700;
   text-align: right;
-`;
 
-// export const PizzaSize = styled.p``;
+  @media (min-width: 1600px) {
+    font-size: ${({ theme: { fontSize } }) => {
+      return fontSize.xm;
+    }};
+  }
+  @media (max-width: 520px) {
+    font-size: ${({ theme: { fontSize } }) => {
+      return fontSize.sm;
+    }};
+  }
+`;

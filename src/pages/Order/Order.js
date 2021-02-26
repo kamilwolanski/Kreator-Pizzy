@@ -2,8 +2,6 @@ import { OrderSection } from './Order.style';
 import Nav from '../../components/organisms/Nav/Nav';
 import Content from '../../components/templates/Content/Content';
 import compose_pizza from '../../assets/backgrounds/compose_pizza.jpg';
-import stol from '../../assets/backgrounds/stol.jpg';
-import stol2 from '../../assets/backgrounds/stol2.jpg';
 import stol3 from '../../assets/backgrounds/stol3.jpg';
 import StyledButton from '../../components/atoms/StyledButton.style';
 import { ButtonsContainer, StyledCenter } from './Order.style';
@@ -15,7 +13,8 @@ import {
   addPizza,
   addPizzaToMain,
 } from '../../actions/appActions';
-
+import RollingPin from '../../components/atoms/RollingPin/RollingPin';
+import Grater from '../../components/atoms/Grater/Grater';
 const Order = ({
   resetIngredients,
   addPizza,
@@ -57,6 +56,7 @@ const Order = ({
             <StyledButton
               margin
               extraPadding
+              fontM
               disabled={!shoppingBasket.length}
               onClick={() => handleOnClick(currentLocation)}
             >
@@ -65,6 +65,17 @@ const Order = ({
           </ButtonsContainer>
         </StyledCenter>
       </OrderSection>
+      {currentLocation.pathname === '/order' && (
+        <RollingPin visibleY="70" hiddenY="140" exitY="70" exitX="-200" />
+      )}
+      {currentLocation.pathname === '/order/ingredients' && (
+        <Grater
+          visibleX="0vw"
+          hiddenX="-100vw"
+          visibleY="30vh"
+          hiddenY="-30vh"
+        />
+      )}
     </>
   );
 };

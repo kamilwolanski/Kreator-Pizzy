@@ -10,13 +10,14 @@ import {
   PopUpTitle,
   StyledWrapper,
   PopUpText,
+  TotalAmount,
 } from './Summary.style';
 import { useHistory } from 'react-router-dom';
 import { resetIngredients } from '../../actions/appActions';
 import StyledButton from '../../components/atoms/StyledButton.style';
 import BasketItem from '../../components/organisms/BasketItem/BasketItem';
-import bakeImg from '../../assets/backgrounds/bake.jpg';
 import BackToStart from '../../components/atoms/BackToStart';
+import Girl from '../../components/atoms/Girl/Girl';
 
 const Summary = ({
   shoppingBasket,
@@ -61,7 +62,12 @@ const Summary = ({
   };
   return (
     <>
-      <StyledSummary img={bakeImg} blured={isPopUp}>
+      <StyledSummary
+        blured={isPopUp}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         {!isPopUp && <StyledSummaryTittle>podsumowanie</StyledSummaryTittle>}
         {!isPopUp && (
           <StyledSummaryContainer>
@@ -74,7 +80,7 @@ const Summary = ({
                 />
               ))}
             </Ul>
-            <h2 style={{ padding: '20px' }}>Łącznie: {totalAmount} zł</h2>
+            <TotalAmount>Łącznie: {totalAmount} zł</TotalAmount>
           </StyledSummaryContainer>
         )}
         {!isPopUp && (
@@ -89,7 +95,7 @@ const Summary = ({
         )}
       </StyledSummary>
       {isPopUp && (
-        <PopUp>
+        <PopUp initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <StyledWrapper>
             <PopUpTitle>dziękujemy!</PopUpTitle>
             <PopUpText>
@@ -102,11 +108,12 @@ const Summary = ({
                 : seconds + 'sec' + ' '}
             </PopUpText>
             <div style={{ margin: '45px' }}>
-              <BackToStart border="black" color="black" />
+              <BackToStart />
             </div>
           </StyledWrapper>
         </PopUp>
       )}
+      <Girl visibleX="0" hiddenX="-200" visibleY="-30" hiddenY="-30" />
     </>
   );
 };

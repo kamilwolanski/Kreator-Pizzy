@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap");
+
+#basil2,
+#basil1,
+#basil3,
+#basil4,
+#basil5,
+#basil6,
+#basil9,
+#basil7,
+#basil8 {
+    transform: translate(30px, -500px);
+
+    transform-origin: center;
+    animation-name: leave;
+
+    animation-timing-function: linear;
+
+    animation-fill-mode: forwards;
+
+}
+
+#basil1 {
+    animation-delay: 0.2s;
+    animation-duration: 4s;
+
+}
+
+#basil2 {
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+
+}
+
+#basil3 {
+    animation-delay: 0.4s;
+    animation-duration: 3s;
+
+}
+
+#basil4 {
+    animation-delay: 0.5s;
+    animation-duration: 4s;
+}
+
+#basil5 {
+    animation-delay: 0.2s;
+    animation-duration: 3.6s;
+}
+
+#basil6 {
+    animation-delay: 0.2s;
+    animation-duration: 3.6s;
+}
+
+#basil7 {
+    animation-delay: 0.2s;
+    animation-duration: 3.6s;
+}
+
+#basil8 {
+    animation-delay: 0.2s;
+    animation-duration: 3.6s;
+}
+
+#basil9 {
+    animation-delay: 0.2s;
+    animation-duration: 3.6s;
+}
+
+
+@keyframes leave {
+    0% {
+        transform: translate(30px, -300px);
+    }
+
+    30% {
+        transform: translate(-30px, -200px);
+    }
+
+    60% {
+        transform: translate(30px, -100px);
+    }
+
+    90% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px)
+    }
+}
+
+@media (min-width: 1600px) {
+    .pizza {
+        transform: scale(1.4);
+    }
+}
+
+@media (max-width: 1300px) {
+    .pizza {
+        height: auto;
+    }
+}

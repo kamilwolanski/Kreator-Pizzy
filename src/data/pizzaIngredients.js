@@ -1,20 +1,22 @@
-import salamiImg from '../assets/pizza_ingredients/salami.svg';
-import cheeseImg from '../assets/pizza_ingredients/cheese.svg';
+import salamiImg from '../assets/pizza_ingredients/salami1.svg';
+import cheeseImg from '../assets/pizza_ingredients/cheese1.svg';
 import mozzarellaImg from '../assets/pizza_ingredients/mozzarella.svg';
-import mushroomsImg from '../assets/pizza_ingredients/champignon.svg';
-import pepperImg from '../assets/pizza_ingredients/peppers.svg';
-import tomatoesImg from '../assets/pizza_ingredients/tomatoes.svg';
-import olivesImg from '../assets/pizza_ingredients/olives.svg';
-import basilImg from '../assets/pizza_ingredients/basil.svg';
+import mushroomsImg from '../assets/pizza_ingredients/champignon1.svg';
+import pepperImg from '../assets/pizza_ingredients/peppers1.svg';
+import tomatoesImg from '../assets/pizza_ingredients/tomatoes1.svg';
+import olivesImg from '../assets/pizza_ingredients/olives1.svg';
+import basilImg from '../assets/pizza_ingredients/basil1.svg';
+import shrimpImg from '../assets/pizza_ingredients/shrimp.svg';
+import garlicImg from '../assets/pizza_ingredients/garlic.svg';
 
 const pizzaIngredients = [
   {
     id: 1,
     name: 'Salami',
     amount: 0,
-    price: 1,
+    price: 0.5,
     img: salamiImg,
-    weight: 1,
+    weight: 2,
     isToMuch: false,
   },
   {
@@ -23,23 +25,23 @@ const pizzaIngredients = [
     amount: 0,
     price: 2,
     img: cheeseImg,
-    weight: 1,
+    weight: 2,
     isToMuch: false,
   },
   {
     id: 3,
-    name: 'Mozzarella',
+    name: 'krewetka',
     amount: 0,
     price: 3,
-    img: mozzarellaImg,
-    weight: 3,
+    img: shrimpImg,
+    weight: 1,
     isToMuch: false,
   },
   {
     id: 4,
     name: 'Pieczarki',
     amount: 0,
-    price: 0.5,
+    price: 0.25,
     img: mushroomsImg,
     weight: 1.5,
     isToMuch: false,
@@ -48,7 +50,7 @@ const pizzaIngredients = [
     id: 5,
     name: 'Papryka',
     amount: 0,
-    price: 1,
+    price: 0.25,
     img: pepperImg,
     weight: 1,
     isToMuch: false,
@@ -57,7 +59,7 @@ const pizzaIngredients = [
     id: 6,
     name: 'Pomidory',
     amount: 0,
-    price: 2,
+    price: 1,
     img: tomatoesImg,
     weight: 2,
     isToMuch: false,

@@ -13,7 +13,7 @@ const BasketItem = ({ name, ingredients, price, totalAmount, totalPrice }) => {
       <StyledBasketItemWrapper>
         <PizzaSizeContainer>
           <p>Rozmiar: {name}</p>
-          <p style={{ fontWeight: 200 }}>{price.toFixed(2)} zł</p>
+          <p>{price.toFixed(2)} zł</p>
         </PizzaSizeContainer>
         <Ul marginLeft>
           {ingredients.map((ingredient) => (

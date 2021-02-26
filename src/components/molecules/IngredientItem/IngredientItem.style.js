@@ -62,6 +62,10 @@ export const IngredientName = styled.p`
 
 export const AddAndSubtract = styled.div`
   margin: 0 10px;
+
+  @media (max-width: 570px) {
+    margin: 0;
+  }
 `;
 
 export const IngredientAmount = styled.input`
@@ -88,6 +92,7 @@ export const IngredientAmount = styled.input`
   @media (max-width: 600px) {
     width: 30px;
     height: 30px;
+    margin: 0 10px;
     font-size: ${({ theme: { fontSize } }) => {
       return fontSize.s;
     }};
@@ -118,6 +123,7 @@ export const IngredientPriceAndWeight = styled.div`
 
 export const IngredientPrice = styled.p`
   font-weight: 700;
+  text-align: center;
 `;
 
 export const IngredientWeight = styled(IngredientPrice)`
@@ -152,5 +158,17 @@ export const Slash = styled.span`
 
   @media (min-width: 1600px) {
     font-size: 50px;
+  }
+`;
+
+export const ToMuch = styled.p`
+  align-self: flex-end;
+  font-size: 12px;
+  color: red;
+
+  @media (max-width: 570px) {
+    font-size: ${({ theme: { fontSize } }) => {
+      return fontSize.ss;
+    }};
   }
 `;

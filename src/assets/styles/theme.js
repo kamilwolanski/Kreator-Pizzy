@@ -19,5 +19,6 @@ export const theme = {
     m: '22px',
     sm: '16px',
     s: '11px',
+    ss: '8px',
   },
 };

@@ -16,6 +16,7 @@ import {
   IngredientWeight,
   IngredientPriceAndWeight,
   Slash,
+  ToMuch,
 } from './IngredientItem.style';
 import {
   toggleAmount,
@@ -84,11 +85,7 @@ const IngredientItem = ({
           <IngredientImg src={img} />
           <IngredientName>{name}</IngredientName>
         </Side>
-        {isToMuch && (
-          <p style={{ alignSelf: 'flex-end', fontSize: '12px', color: 'red' }}>
-            Wykorzystano limit wagi dla tego składnika
-          </p>
-        )}
+        {isToMuch && <ToMuch>Wykorzystano limit wagi</ToMuch>}
         <Side>
           <AddAndSubtract>
             <StyledToggleBtn onClick={() => handleOnClick(id, 'dec')}>
